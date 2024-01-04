@@ -66,3 +66,21 @@ animation-duration: 0.4s
   background-color: rgb(253, 232, 232);
 }
 
+@media (max-width: 907px) {
+
+.card {
+  padding: 0pt !important;
+  margin: 0pt !important;
+}
+
+.title{
+  font-size: 28pt;
+  word-wrap: break-word;
+  word-break: keep-all;
+}
+
+.modal-content {
+  width: 90%;
+  }
+}
+    
