@@ -4,6 +4,10 @@ body {
   background-color:rgb(235, 234, 238)
 }
 
+.card{
+  padding: 20px;
+  margin: 50px;
+}
 .close {
   float: right;
 }
@@ -28,34 +32,34 @@ body {
 }
 
 .task-item {
-margin-bottom: 20px;
-padding: 10px;
-border: 1px solid #ccc;
-border-radius: 5px;
+  margin-bottom: 20px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
 }
 
 .modal {
-display: none;
-position: fixed;
-z-index: 1;
-left: 0;
-top: 0;
-width: 100%;
-height: 100%;
-overflow: auto;
-background-color: rgba(0, 0, 0, 0.4);
+  display: none;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.4);
 }
 
 .modal-content {
-border-radius: 10px;
-background-color: #fafaff;
-margin: auto;
-padding: 20px;
-border: 1px solid #616164;
-width: 70%;
-height: 80%; 
-animation-name: animatetop;
-animation-duration: 0.4s
+  border-radius: 10px;
+  background-color: #fafaff;
+  margin: auto;
+  padding: 20px;
+  border: 1px solid #616164;
+  width: 70%;
+  height: 80%; 
+  animation-name: animatetop;
+  animation-duration: 0.4s
 }
 
 .task-completed {
@@ -68,19 +72,36 @@ animation-duration: 0.4s
 
 @media (max-width: 907px) {
 
-.card {
-  padding: 0pt !important;
-  margin: 0pt !important;
-}
+  .card {
+    padding: 0px !important;
+    margin: 1px !important;
+  }
 
-.title{
-  font-size: 28pt;
-  word-wrap: break-word;
-  word-break: keep-all;
-}
+  .title{
+    font-size: 20pt;
+    word-wrap: break-word;
+    word-break: keep-all;
+    margin-top: 20px;
+    padding-left: 10px;
+  }
 
-.modal-content {
-  width: 90%;
+  .media-left{
+    width: 35% !important;
+  }
+
+  .image{
+    width: 100% !important;
+  }
+
+  .modal-content {
+    width: 90%;
+  }
+
+  .button{
+    font-size: 70%;
+  }
+
+  .card-content {
+    padding: 10px;
   }
 }
-    
