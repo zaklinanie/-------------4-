@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.1/css/bulma.min.css">
+  <link rel="stylesheet" href="index.css"/>
+  <title>Список задач</title>
+</head>
+<body>
+  <div class="container is-fluid p-5">
+    <div class="card p-5 m-5">
+      <div class="card-content">
+        <div class="media m-0" >
+          <figure class="m-0 media-left">
+            <p class="image is-128x128">
+            <img src="https://upload.wikimedia.org/wikipedia/ru/4/47/Gazprom_energo_logo.gif"></p>
+          </figure>
+          <p class="title pt-1"> Мои задачи</p>
+        </div>
+        <p class="is-size-3 mb-5" style="text-align: start">Новая задача</p>
+        <form autocomplete="off" id="save-task">
+        <div class="field is-horizontal">
+          <div class="field">
+            <label class="label">Заголовок *</label>
+            <div class="control">
+              <input id="itTitle" class="input is-link" type="text" required />
+            </div>
+          </div>
+          <div class="field">
+            <label class="label">Сроки выполнения</label>
+            <div class="control">
+              <input id="itDeadline" class="input is-link" type="date" />
+            </div>
+          </div>
+        </div>
+        <div class="field">
+          <label class="label">Описание</label>
+          <div class="control is-loading">
+            <textarea id="itDescription" class="textarea is-link" placeholder="Loading textarea"></textarea>
+          </div>
+        </div>
+        <p class="field help">
+          * обязательное поле
+        </p>
+        <div class="field is-grouped">
+          <div class="control">
+            <button id="btnCreate" type="submit" class="button is-info is-light">Создать</button>
+          </div>
+          <div class="control">
+            <button id="btnReset" type="reset" class="button is-danger is-light">Перезагрузить</button>
+          </div>
+        </div>
+      </form>
+      <hr/>
+      <p class="is-size-3 pb-5" style="text-align:start;">Мои задачи</p>
+      <div  id="task-container" class="is-size-6 mb-4" style="text-align: start">
+        <p>Сейчас нет задач</p>
+      </div>
+    </div>
+  </div>
+  
+  <div id="myModal" class="modal">
+    <div class="modal-content">
+      <button class="delete close"></button>
+      <form autocomplete="off" id="task-edit">
+        <div class="field">
+          <label class="label">Заголовок</label>
+          <div class="control">
+            <input id="editTitle" class="input is-link" type="text" />
+          </div>
+        </div>
+        <div class="field">
+          <label class="label">Описание задачи</label>
+          <div class="control">
+            <textarea id="editDescription" class="textarea is-link"></textarea>
+          </div>
+        </div>
+        <div class="field">
+          <label class="label">Сроки выполнения</label>
+          <div class="control">
+            <input id="editDeadline" class="input is-link" type="date" />
+          </div>
+        </div>
+
+        <div class="field">
+          <label class="checkbox">
+            <input type="checkbox" id="editDone">
+           Задача выполнена?
+          </label>
+        </div>
+
+        <div class="field is-grouped">
+          <div class="control">
+            <button id="btnsave" type="submit" class="button is-info">Сохранить изменения</button>
+          </div>
+        </div>
+      </form>
+    </div>
+
+  </div>
+</div>
+
+<script src="main.js"></script>
+<script>
+  
+
+</script>
+</body>
+</html>
